@@ -64,6 +64,25 @@
               <th>聯絡方式</th>
             </tr>
           </thead>
+          <tbody>
+            <!--捐血車/站-->
+            <tr ng-repeat="bloods in bloodList.data">
+              <td>
+                  <p>{{bloods.name}}</p>
+                  <p>{{bloods.time}}</p>
+              </td>
+              <!--聯絡方式-->
+              <td>
+                  <a href="tel:{{bloods.tel}}">{{bloods.tel}}</a>
+                  <br>
+                  <a href="https://www.google.com/maps?q={{bloods.address}}">{{bloods.address}}</a>
+                  <br>
+                  <span class="label label-info">{{bloods.location}}</span>
+              </td>
+            </tr>
+            <!--捐血車/站-->
+            <!--End-->  
+          </tbody>
         </table>
       </div>
     </div>
