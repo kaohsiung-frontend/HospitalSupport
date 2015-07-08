@@ -66,7 +66,7 @@
           </thead>
           <tbody>
             <!--捐血車/站-->
-            <tr ng-repeat="bloods in bloodList.data">
+            <tr ng-repeat="bloods in bloodList.data |  filter:MainCtrl.blood">
               <td>
                   <p>{{bloods.name}}</p>
                   <p>{{bloods.time}}</p>
