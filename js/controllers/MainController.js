@@ -1,5 +1,5 @@
-app.controller('MainController',['$scope', 'blood', 'people', 'bloodString',
- function ($scope, blood, people, bloodString) {
+app.controller('MainController',['$scope', 'blood', 'people', 'bloodStatus',
+ function ($scope, blood, people, bloodStatus) {
     $scope.type = 'blood';
    	
     blood
@@ -18,7 +18,7 @@ app.controller('MainController',['$scope', 'blood', 'people', 'bloodString',
             console.log('people-error:' + err);
         });
 
-    bloodString
+    bloodStatus
         .success(function(data){
             $scope.bloodStatus = data;
         })
