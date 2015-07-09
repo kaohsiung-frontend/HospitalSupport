@@ -72,9 +72,9 @@
             <div class="col-lg-12">
               <span>{{bloods.name}}：</span>
               <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageA]">A型:&nbsp;{{bloods.StorageA | bloodString}}</span>
-              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageB]">B型:&nbsp;{{bloods.StorageB}}</span>
-              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageO]">O型:&nbsp;{{bloods.StorageO}}</span>
-              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageAB]">AB型:&nbsp;{{bloods.StorageAB}}</span>
+              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageB]">B型:&nbsp;{{bloods.StorageB | bloodString}}</span>
+              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageO]">O型:&nbsp;{{bloods.StorageO | bloodString}}</span>
+              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageAB]">AB型:&nbsp;{{bloods.StorageAB | bloodString}}</span>
             </div>
           </div>
 

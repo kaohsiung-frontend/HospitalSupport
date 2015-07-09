@@ -1,6 +1,5 @@
-angular
-.module('app', [])
-.controller('MainController',function ($log, $http, $scope) {
+var app = angular.module('app', [])
+app.controller('MainController',function ($log, $http, $scope) {
     $scope.type = 'blood';
 
    	$http.get('json/blood.json')
@@ -25,19 +24,19 @@ angular
     
 });
 
-.filter('bloodString', function(){
+app.filter('bloodString', function(){
 	return function(str){
-		if(str == full){
+		if(str == 'full'){
 			return '正常';
 		}
-		else if(str == medium){
+		else if(str == 'medium'){
 			return '偏低';	
 		}
-		else if(str == empty){
+		else if(str == 'empty'){
 			return '極缺';	
 		}
 
 		
 	};
-		}
+		
 });
