@@ -97,6 +97,7 @@
             </tr>
           </thead>
           <tbody>
+          {{ icuCount }} {{ sickRoomCount }}
             <tr ng-repeat="people in peopleList.data |  filter:MainCtrl.query">
               <td>
                 <p>{{ people["編號"] }}</p>
