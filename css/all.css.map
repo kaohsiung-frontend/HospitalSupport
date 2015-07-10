@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,UAAU;EACT,WAAW,EAAE,IAAI;;AACjB,cAAG;EACF,aAAa,EAAE,IAAI;;AACpB,eAAI;EACH,KAAK,ECLK,OAAO;EDMjB,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;;;AAGlB,cAAc;EACb,YAAY,ECZD,OAAO;EDalB,UAAU,EAAE,KAAK;;;AAElB,UAAU;EACT,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,iBAAiB;EAC1B,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,KAAK;EACZ,YAAY,EAAE,IAAI;;;AAEnB,KAAK;EACJ,UAAU,ECvBC,OAAO;;;ADyBnB,OAAO;EACN,UAAU,EAAE,OAAO;;;AAEpB,MAAM;EACL,UAAU,EAAE,OAAO",
-"sources": ["file:///Users/hungjie/Blood_Donation_Station/sass/index.sass","file:///Users/hungjie/Blood_Donation_Station/sass/var.sass"],
-"names": [],
-"file": "all.css"
-}
