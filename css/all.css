@@ -1,9 +1,11 @@
 .bloodInfo {
   line-height: 32px;
 }
+
 .bloodInfo img {
   margin-bottom: 12px;
 }
+
 .bloodInfo span {
   color: #2EBD9B;
   padding-right: 10px;
@@ -39,5 +41,3 @@
 .progress-bar-custom {
   background: #c5c6c7;
 }
-
-/*# sourceMappingURL=all.css.map */
