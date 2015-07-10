@@ -14,3 +14,12 @@ app.filter('bloodString', function(){
 		}
 	};
 });
+
+app.filter('StatusOnly', function(){
+	return function(str){
+		if(str != 'time'){
+			console.log(str);
+			return str;
+		}
+	};
+});

@@ -1,9 +1,11 @@
 .bloodInfo {
   line-height: 32px;
 }
+
 .bloodInfo img {
   margin-bottom: 12px;
 }
+
 .bloodInfo span {
   color: #2EBD9B;
   padding-right: 10px;
@@ -11,9 +13,18 @@
   background: #fff;
 }
 
+.bloodInfo-block {
+  margin-bottom: 20px;
+}
+
 .hotColor-line {
   border-color: #2EBD9B;
   margin-top: -35px;
+}
+
+.storage-center {
+  color: #8A6D3B;
+  font-size: 16px;
 }
 
 .bloodType {
@@ -35,5 +46,3 @@
 .empty {
   background: #EF5361;
 }
-
-/*# sourceMappingURL=all.css.map */
