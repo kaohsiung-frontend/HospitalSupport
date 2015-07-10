@@ -116,21 +116,12 @@ app.controller('MainController',['$scope', 'blood', 'people', 'bloodStatus',
             for(var x in data){
                 if(x == 'time'){ // get 時間
                     
-
-                    console.log(data[x]);
-                    var getDate = new Date(data[x]);
-                    console.log(getDate);
-
-
-                    var nowDate = new Date();
-                    console.log('nowTime = '+nowDate);
+                    var getDate = new Date(data[x]); //get API Time
+                    var nowDate = new Date(); // get
 
                     var diffDate = nowDate - getDate;
-                    console.log('diffDate = '+diffDate);
-                    
                     var mm = new Date(diffDate);
                     var diffMinutes = mm.getMinutes();
-                    console.log('mm = '+x);
 
                     $scope.bloodStatusDataTime = diffMinutes;   
                 }
@@ -146,6 +137,7 @@ app.controller('MainController',['$scope', 'blood', 'people', 'bloodStatus',
 
 }]);
 
+// Date: 擴充 string to Date
 Date.prototype.pattern=function(fmt) {         
     var o = {         
     "M+" : this.getMonth()+1, //月份         
