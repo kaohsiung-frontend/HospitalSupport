@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
     <title>八仙塵爆傷者開放資料查詢</title>
     <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='css/all.css'>
     <!-- fork g0v yutin -->
   </head>
   <body>
@@ -57,6 +58,29 @@
           - 血有保存期限問題，建議分散捐血時間</br>
           <a href="http://www.blood.org.tw/Internet/main/blood_before/index.html" target="_blank">更多捐血須知，點此連結</a>
         </div>
+        <!--blood Status-->
+        <div class="bloodInfo">
+          <h1> 
+            <span>
+            <img src="images/drop.png" height="34" width="28" alt="">
+            各地血庫存量資訊</span>
+          </h1> 
+        </div>
+        <hr class="hotColor-line">
+        <div class="bloodInfo-block">
+          <div ng-repeat="bloods in bloodStatus">
+            <div class="col-lg-12">
+              <span>{{bloods.name}}：</span>
+              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageA]">A型:&nbsp;{{bloods.StorageA | bloodString}}</span>
+              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageB]">B型:&nbsp;{{bloods.StorageB | bloodString}}</span>
+              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageO]">O型:&nbsp;{{bloods.StorageO | bloodString}}</span>
+              <span class="bloodType" ng-class="{full: 'full', medium: 'medium', empty: 'empty'}[bloods.StorageAB]">AB型:&nbsp;{{bloods.StorageAB | bloodString}}</span>
+            </div>
+          </div>
+
+        </div>
+        <!--blood Status end-->
+
         <table class="table table-striped">
           <thead>
             <tr>
@@ -66,7 +90,7 @@
           </thead>
           <tbody>
             <!--捐血車/站-->
-            <tr ng-repeat="bloods in bloodList.data |  filter:MainCtrl.blood">
+            <tr ng-repeat="bloods in bloodList.data | filter: MainCtrl.blood">
               <td>
                   <p>{{bloods.name}}</p>
                   <p>{{bloods.time}}</p>

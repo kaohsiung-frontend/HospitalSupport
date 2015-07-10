@@ -1,4 +1,5 @@
-app.controller('MainController',['$scope', 'blood', 'people', function ($scope, blood, people) {
+app.controller('MainController',['$scope', 'blood', 'people', 'bloodStatus',
+ function ($scope, blood, people, bloodStatus) {
     $scope.type = 'blood';
    	
     blood
@@ -30,4 +31,13 @@ app.controller('MainController',['$scope', 'blood', 'people', function ($scope, 
         .error(function(err){
             console.log('people-error:' + err);
         });
+
+    bloodStatus
+        .success(function(data){
+            $scope.bloodStatus = data;
+        })
+        .error(function(err){
+            console.log('people-error:' + err);
+        });
+
 }]);
