@@ -30,7 +30,7 @@ app.controller('MainController',['$scope', 'blood', 'people', 'bloodStatus',
 
                 var hospital = {"收治單位": "", "重傷": 0
                     , "中傷": 0, "輕傷": 0,"加護病房": 0,
-                    "一般病房": 0, "其他": 0, "傷者總數": 0};
+                    "一般病房": 0, "其他": 0, "sum": 0};
 
                 var addHospital = true;
 
@@ -85,19 +85,19 @@ app.controller('MainController',['$scope', 'blood', 'people', 'bloodStatus',
                     case '重傷':
                         $scope.seriousInjuredCount++;
                         currentHospital["重傷"]++;
-                        currentHospital["傷者總數"]++;
+                        currentHospital["sum"]++;
                         $scope.count1++;
                         break;
                     case '中傷':
                         $scope.mediumInjuredCount++;
                         currentHospital["中傷"]++;
-                        currentHospital["傷者總數"]++;
+                        currentHospital["sum"]++;
                         $scope.count2++;
                         break;
                     case '輕傷':
                         $scope.slightInjuredCount++;
                         currentHospital["輕傷"]++;
-                        currentHospital["傷者總數"]++;
+                        currentHospital["sum"]++;
                         $scope.count3++;
                         break;
                 }
