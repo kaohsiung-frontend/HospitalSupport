@@ -23,3 +23,20 @@ app.filter('StatusOnly', function(){
 		}
 	};
 });
+
+// filter for people search
+
+app.filter('peopleSearch', ['$filter', function($filter){
+	return function(data, text){
+		if (!text) return [];
+
+		data = data.filter(function(item){
+			return item["姓名"].search(text) > -1
+				|| item["收治單位"].search(text) > -1
+				|| item["醫療檢傷"].search(text) > -1
+				|| item["救護檢傷"].search(text) > -1;
+		})
+
+		return data;
+	}
+}]);
