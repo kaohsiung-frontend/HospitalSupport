@@ -88,7 +88,7 @@ gulp.task('compass_minify', function() {
 
 gulp.task('scripts', function() {
   return gulp.src(paths.scripts)
-    .pipe(jshint('.jshintrc'))
+    // .pipe(jshint('.jshintrc'))
     // .pipe(jshint())
     .pipe(jshint.reporter('default'))
     .pipe(concat('all.js'))
