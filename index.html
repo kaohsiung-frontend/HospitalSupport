@@ -127,7 +127,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="people in peopleList.data |  peopleSearch: MainCtrl.query">
+            <tr ng-repeat="people in peopleList.data |  filter:MainCtrl.query">
               <td>
                 <p>{{ people["編號"] }}</p>
                 <p>
@@ -204,10 +204,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="hospital in hospitalList | filter: MainCtrl.hospital | orderBy: '-sum'">
+            <tr ng-repeat="hospital in hospitalList | filter: MainCtrl.hospital">
               <td>
                 <p>{{ hospital["收治單位"] }}</p>
-                <p>傷者總數：{{ hospital["sum"] }}</p>
               </td>
               <td>
                 <p class="label label-danger">重傷：{{ hospital["重傷"] }}</p>
@@ -216,13 +215,13 @@
                 <br>
                 <br>
                 <div class="progress">
-                  <div class="progress-bar progress-bar-danger" style="width: {{ hospital['重傷'] / hospital['sum'] * 100}}%">
+                  <div class="progress-bar progress-bar-danger" style="width: {{ hospital['重傷'] / hospital['傷者總數'] * 100}}%">
                     <span class="sr-only">{{ hospital['重傷'] / hospital['傷者總數'] * 100}}% Complete (danger)</span>
                   </div>
-                  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: {{ hospital['中傷'] / hospital['sum'] * 100}}%">
+                  <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: {{ hospital['中傷'] / hospital['傷者總數'] * 100}}%">
                     <span class="sr-only">{{ hospital['中傷'] / hospital['傷者總數'] * 100}}% Complete (warning)</span>
                   </div>
-                  <div class="progress-bar progress-bar-success" style="width: {{ hospital['輕傷'] / hospital['sum'] * 100}}%">
+                  <div class="progress-bar progress-bar-success" style="width: {{ hospital['輕傷'] / hospital['傷者總數'] * 100}}%">
                     <span class="sr-only">{{ hospital['輕傷'] / hospital['傷者總數'] * 100}}% Complete (success)</span>
                   </div>
                 </div>
