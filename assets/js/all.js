@@ -40,37 +40,6 @@ app.filter('peopleSearch', ['$filter', function($filter){
 		return data;
 	}
 }]);
-
-// get 捐血車/站 data
-app.factory('blood', ['$http', function blood($http){
-    return $http.get('json/blood.json')
-        .success(function(data) {
-            return data;
-        })
-        .error(function(err){
-            return err;
-        });
-}]);
-
-// get 血庫存量 data 
-app.factory('bloodStatus', ['$http', function bloodStatus($http){
-    return $http.get('http://g0v.github.io/blood/blood.json')
-        .success(function(data) {
-            return data;
-        })
-        .error(function(err){
-            return err;
-        });
-}]);
-app.factory('people', ['$http', function people($http){
-    return $http.get('http:////tonyq.org/kptaipei/api-20150628.php')
-        .success(function(data){
-            return data;
-        })
-        .error(function(err){
-            return err;
-        });
-}]);
 app.controller('MainController',['$scope', 'blood', 'people', 'bloodStatus',
  function ($scope, blood, people, bloodStatus) {
     $scope.type = 'hospital';
@@ -244,3 +213,35 @@ Date.prototype.pattern=function(fmt) {
     }         
     return fmt;         
 }       
+
+
+// get 捐血車/站 data
+app.factory('blood', ['$http', function blood($http){
+    return $http.get('json/blood.json')
+        .success(function(data) {
+            return data;
+        })
+        .error(function(err){
+            return err;
+        });
+}]);
+
+// get 血庫存量 data 
+app.factory('bloodStatus', ['$http', function bloodStatus($http){
+    return $http.get('http://g0v.github.io/blood/blood.json')
+        .success(function(data) {
+            return data;
+        })
+        .error(function(err){
+            return err;
+        });
+}]);
+app.factory('people', ['$http', function people($http){
+    return $http.get('http:////tonyq.org/kptaipei/api-20150628.php')
+        .success(function(data){
+            return data;
+        })
+        .error(function(err){
+            return err;
+        });
+}]);

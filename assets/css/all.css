@@ -1,63 +1,50 @@
-/*
-Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.
-        on line 19 of sass/index.sass
-        from line 3 of sass/all.sass
+.bloodInfo {
+  line-height: 32px;
+}
+.bloodInfo img {
+  margin-bottom: 12px;
+}
+.bloodInfo span {
+  color: #2EBD9B;
+  padding-right: 10px;
+  font-size: 28px;
+  background: #fff;
+}
 
-14: .hotColor-line
-15: 	border-color: $hot-color
-16: 	margin-top: -35px
-17: 
-18: .storage-center
-19:   color: #8A6D3B
-20:   font-size: 16px
-21: 
-22: .bloodType
-23: 	border-radius: 20px
-24: 	padding: 8px 25px 8px 25px
+.bloodInfo-block {
+  margin-bottom: 20px;
+}
 
-Backtrace:
-sass/index.sass:19
-sass/all.sass:3
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/engine.rb:473:in `block in tabulate'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/engine.rb:431:in `each'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/engine.rb:431:in `each_with_index'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/engine.rb:431:in `tabulate'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/engine.rb:396:in `_to_tree'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/engine.rb:299:in `to_tree'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/stack.rb:88:in `block in with_import'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/stack.rb:88:in `with_import'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/tree/root_node.rb:20:in `render'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/engine.rb:268:in `render'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:415:in `run'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/gems/sass-3.4.14/bin/sass:13:in `<top (required)>'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/bin/sass:23:in `load'
-/Users/hungjie/.rvm/gems/ruby-2.1.5/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 19 of sass/index.sass\A         from line 3 of sass/all.sass\A \A 14: .hotColor-line\A 15: 	border-color: $hot-color\A 16: 	margin-top: -35px\A 17: \A 18: .storage-center\A 19:   color: #8A6D3B\A 20:   font-size: 16px\A 21: \A 22: .bloodType\A 23: 	border-radius: 20px\A 24: 	padding: 8px 25px 8px 25px"; }
+.hotColor-line {
+  border-color: #2EBD9B;
+  margin-top: -35px;
+}
+
+.storage-center {
+  color: #8A6D3B;
+  font-size: 16px;
+}
+
+.bloodType {
+  border-radius: 20px;
+  padding: 8px 25px 8px 25px;
+  line-height: 45px;
+  color: white;
+  margin-right: 10px;
+}
+
+.full {
+  background: #2EBD9B;
+}
+
+.medium {
+  background: #F7BC33;
+}
+
+.empty {
+  background: #EF5361;
+}
+
+.progress-bar-custom {
+  background: #c5c6c7;
+}
