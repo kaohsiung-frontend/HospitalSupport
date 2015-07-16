@@ -1,0 +1,7 @@
+/assets
+/node_modules
+.bundle
+.sass-cache
+.tmp
+.DS_Store
+Thumbs.db
