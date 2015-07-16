@@ -4,20 +4,29 @@
 .bloodInfo img {
   margin-bottom: 12px;
 }
+.bloodInfo h1 {
+  position: relative;
+}
+.bloodInfo h1:before {
+  content: "";
+  display: block;
+  border-top: 1px solid #2EBD9B;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+}
 .bloodInfo span {
   color: #2EBD9B;
   padding-right: 10px;
   font-size: 28px;
   background: #fff;
+  display: inline-block;
+  position: relative;
 }
 
 .bloodInfo-block {
   margin-bottom: 20px;
-}
-
-.hotColor-line {
-  border-color: #2EBD9B;
-  margin-top: -35px;
 }
 
 .storage-center {
