@@ -1,19 +1,32 @@
 .bloodInfo
 	line-height: 32px
 	img
-		margin-bottom: 12px	
+		margin-bottom: 12px
+	h1
+		position: relative
+		&:before
+			content: ""
+			display: block
+			border-top: 1px solid $hot-color
+			position: absolute
+			top: 50%
+			left: 0
+			width: 100%
 	span
 		color: $hot-color
 		padding-right: 10px
 		font-size: 28px
 		background: #fff
+		display: inline-block
+		position: relative
+
+		
+
 
 .bloodInfo-block
 	margin-bottom: 20px	
 
-.hotColor-line
-	border-color: $hot-color
-	margin-top: -35px
+
 
 .storage-center
 	color: #8A6D3B
